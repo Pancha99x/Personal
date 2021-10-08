@@ -1,0 +1,133 @@
+/*everyone*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --nav-clr: dodgerblue;
+    --nav-font-clr: black;
+    --sec-bg-clr: rgba(30, 143, 255, 0.116);
+    --sec-mid-bg-clr: rgba(30, 143, 255, 0.161);
+    --padding: 1.5rem 1rem;
+    --heading-two-margin: 1rem;
+    --media-padding: 3.5em 2em;
+}
+
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+header, main, footer {
+    font-size: 16px;
+}
+.sec, .header, .foot {
+    margin: auto 15px;
+}
+
+.width-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--nav-clr);
+    height: 60px;
+    padding: 0rem 1rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container p {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.logo-container img {
+    width: 40px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.095);
+}
+
+/*nav links*/
+
+.list-one {
+    list-style: none;
+}
+
+.list-one li {
+    float: left;
+}
+
+.list-one li a {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-font-clr);
+    padding: 0.65em;
+    /*background-color: tomato;*/
+}
+.list-one li a:hover {
+    color: ghostwhite;
+}
+.list-one li a:focus {
+    color: ghostwhite;
+}
+
+.heading-middle {
+    text-align: center;
+    line-height: 2.3rem;
+}
+.text {
+    margin-top: 4.5rem; /*1.5*/
+    font-size: 2.5rem;
+}
+.next {
+    line-height: 2rem;
+}
+.hero {
+    padding: var(--padding);
+}
+.foot {
+    background-color: var(--nav-clr);
+    text-align: center;
+    padding: var(--padding);    
+}
+/*everyone*/
+
+@media (min-width: 600px) {
+    .width-container {
+        flex-direction: row;
+    }
+    /*everyone*/
+    .hero, .foot {
+        padding: var(--media-padding);
+    }
+    .text {
+        margin-top: 3.5rem;
+        font-size: 3rem;
+    }
+    .heading-middle {
+        line-height: 2.5rem;
+    }
+    .list-one li {
+        width: 90px;
+    }
+    /*everyone*/
+}

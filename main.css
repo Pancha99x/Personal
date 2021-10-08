@@ -1,0 +1,61 @@
+:root {
+    --nav-clr: dodgerblue;
+    --nav-font-clr: black;
+    --sec-bg-clr: rgba(30, 143, 255, 0.116);
+    --sec-mid-bg-clr: rgba(30, 143, 255, 0.161);
+    --padding: 1.5rem 1rem;
+    --heading-two-margin: 1rem;
+    --media-padding: 3.5em 2em;
+}
+
+
+.sec {
+    padding: var(--padding);
+}
+.heading-two {
+    margin-bottom: var(--heading-two-margin);
+}
+.quote {
+    margin-top: var(--heading-two-margin);
+}
+.right-image img:not(.dog img) {
+    margin-top: var(--heading-two-margin);
+}
+.sec {
+    background-color: var(--sec-bg-clr);
+    display: flex;
+    flex-direction: column;
+}
+
+.mid {
+    background-color: var(--sec-mid-bg-clr);
+}
+
+.right-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+blockquote p {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .sec {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sec > * {
+        flex-basis: 100%;
+    }
+    .sec > * + * {
+        margin-left: 2rem;
+    }
+    .left-cont {
+        width: 50%;
+    }
+    .sec {
+        padding: var(--media-padding);
+    }
+
+}

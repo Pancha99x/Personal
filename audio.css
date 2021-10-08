@@ -1,0 +1,55 @@
+:root {
+    --nav-clr: dodgerblue;
+    --nav-font-clr: black;
+    --sec-bg-clr: rgba(30, 143, 255, 0.116);
+    --sec-mid-bg-clr: rgba(30, 143, 255, 0.161);
+    --padding: 1.5rem 1rem;
+    --heading-two-margin: 1rem;
+    --media-padding: 3.5em 2em;
+}
+
+.audio-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.audio {
+    border: 2px solid transparent;
+    border-radius: 50px;
+}
+.audio:hover {
+    border: 2px solid rgba(0, 0, 0, 0.547);
+}
+.audio:focus {
+    border: 2px solid rgba(0, 0, 0, 0.547);
+    transition: 0.2s;
+}
+.one {
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(248, 248, 255, 0.109), rgba(248, 248, 255, 0.109), rgba(0, 0, 0, 0.122));
+    background-color: rgba(0, 0, 0, 0.045);
+    margin-bottom: 1.5rem;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.281);
+}
+.s-name, .info{
+    margin-bottom: 1rem;
+}
+.info {
+    text-align: left;
+    padding-left: 4.5rem;
+}
+
+@media (min-width:750px) {
+    .audio-cont {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .one {
+        margin-bottom: 3.5rem;
+    }
+}

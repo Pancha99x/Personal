@@ -1,0 +1,43 @@
+:root {
+    --nav-clr: dodgerblue;
+    --nav-font-clr: black;
+    --sec-bg-clr: rgba(30, 143, 255, 0.116);
+    --sec-mid-bg-clr: rgba(30, 143, 255, 0.161);
+    --padding: 1.5rem 1rem;
+    --heading-two-margin: 1rem;
+    --media-padding: 3.5em 2em;
+}
+
+.audio-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-col {
+    text-align: center;
+}
+
+.s-name {
+    margin-bottom: 1rem;
+}
+
+iframe {
+    margin-bottom: 2.5rem;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.281);
+}
+.sec {
+    background-color: var(--sec-bg-clr);
+}
+
+@media (min-width:800px) {
+    .audio-cont {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    iframe {
+        margin-bottom: 3.5rem;
+    }    
+}    
